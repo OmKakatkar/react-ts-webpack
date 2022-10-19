@@ -7,18 +7,8 @@ export function App() {
   return (
     <>
       <h1>Hello React TypeScript Template {process.env.name}</h1>;
-      <img
-        src={IMAGE}
-        alt='React Logo'
-        width='350'
-        height='300'
-      />
-      <img
-        src={SVG}
-        alt='React SVG'
-        width='350'
-        height='300'
-      />
+      <img src={IMAGE} alt="React Logo" width="350" height="300" />
+      <img src={SVG} alt="React SVG" width="350" height="300" />
       <ClickCounter />
     </>
   );
