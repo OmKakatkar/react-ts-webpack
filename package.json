@@ -1,8 +1,9 @@
 {
   "name": "react-ts-webpack",
   "version": "1.0.0",
-  "description": "",
+  "description": "A React TypeScript starter pack using Webpack 5",
   "main": "index.js",
+  "browserslist": "> 0.25%, not dead",
   "scripts": {
     "start": "webpack serve --config webpack/webpack.config.js --env env=dev",
     "build": "webpack --config webpack/webpack.config.js --env env=prod",
@@ -11,9 +12,15 @@
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "prepare": "husky install"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "Webpack 5",
+    "React",
+    "Typescript",
+    "Starter Template",
+    "Boilerplate"
+  ],
+  "author": "Om Kakatkar",
+  "license": "MIT",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
