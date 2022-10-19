@@ -33,15 +33,31 @@ module.exports = {
     ],
   },
   output: {
+    filename: '[name].[contenthash].bundle.js',
     path: path.resolve(__dirname, '..', './build'),
-    filename: 'bundle.js',
+    clean: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
+      title: 'React TypeScript Template',
       template: path.resolve(__dirname, '..', './src/index.html'),
     }),
     new CopyPlugin({
       patterns: [{ from: 'src', to: 'build' }],
     }),
   ],
+  optimization: {
+    moduleIds: 'deterministic',
+    runtimeChunk: 'single',
+    splitChunks: {
+      cacheGroups: {
+        node_vendors: {
+          name: 'vendor',
+          test: /[\\/]node_modules[\\/]/,
+          chunks: 'all',
+          priority: 1,
+        },
+      },
+    },
+  },
 };
