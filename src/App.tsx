@@ -1,3 +1,4 @@
+import { ClickCounter } from './ClickCounter';
 import './App.css';
 import IMAGE from './react.png';
 import SVG from './react.svg';
@@ -5,7 +6,7 @@ import SVG from './react.svg';
 export function App() {
   return (
     <>
-      <h1>React TypeScript Template {process.env.name}</h1>;
+      <h1>Hello React TypeScript Template {process.env.name}</h1>;
       <img
         src={IMAGE}
         alt='React Logo'
@@ -18,6 +19,7 @@ export function App() {
         width='350'
         height='300'
       />
+      <ClickCounter />
     </>
   );
 }
