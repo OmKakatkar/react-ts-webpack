@@ -5,7 +5,7 @@ import SVG from './react.svg';
 export function App() {
   return (
     <>
-      <h1>React TypeScript Template</h1>;
+      <h1>React TypeScript Template {process.env.name}</h1>;
       <img
         src={IMAGE}
         alt='React Logo'
