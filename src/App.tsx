@@ -1,5 +1,6 @@
 import './App.css';
 import IMAGE from './react.png';
+import SVG from './react.svg';
 
 export function App() {
   return (
@@ -8,6 +9,12 @@ export function App() {
       <img
         src={IMAGE}
         alt='React Logo'
+        width='350'
+        height='300'
+      />
+      <img
+        src={SVG}
+        alt='React SVG'
         width='350'
         height='300'
       />
