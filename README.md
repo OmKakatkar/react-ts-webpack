@@ -16,11 +16,17 @@ Step 2 : Run the command with your app name.
 npx degit https://github.com/OmKakatkar/react-ts-webpack my-app
 ```
 
-Step 3: Install dependencies
+Step 3: Run the setup command
 
 ```bash
-cd my-app && yarn
+cd my-app && yarn setup
 ```
+
+- The setup command does the following :
+  - Install Dependencies
+  - Creates a git repository
+  - Run `husk install`
+  - Commit the changes to git
 
 ## Dev Server
 
